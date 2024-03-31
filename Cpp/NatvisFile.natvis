@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<!--
+	<Type Name="StaxAppData">
+		<DisplayString>
+			
+		</DisplayString>
+		<Expand>
+			
+		</Expand>
+	</Type>
+	-->
+	<Type Name="LinkedList&lt;*&gt;">
+		<DisplayString>{{ Size = {count} }}</DisplayString>		
+		<Expand>
+			<Item Name="Size">count</Item>
+			<Item Name="Head">head</Item>
+			<Item Name="Tail">tail</Item>
+			<LinkedListItems>				
+				<Size>count</Size>
+				<HeadPointer>head</HeadPointer>
+				<NextPointer>next</NextPointer>
+				<ValueNode>this</ValueNode>
+			</LinkedListItems>
+		</Expand>
+	</Type>
+	<Type Name="LinkedList&lt;*&gt;::Node">
+		<DisplayString>{{ Data = {data} }}</DisplayString>
+		<Expand>
+			<Item Name="Data">data</Item>
+			<Item Name="Next">next</Item>
+			<Item Name="Prev">prev</Item>
+		</Expand>
+	</Type>
+</AutoVisualizer>

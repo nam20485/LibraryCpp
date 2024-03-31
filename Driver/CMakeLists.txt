@@ -3,7 +3,7 @@
 #
 
 # Add source to this project's executable.
-add_executable (Driver "LibraryCpp.cpp" "LibraryCpp.h")
+add_executable (Driver "main.cpp" )
 
 target_link_libraries(Driver "Cpp")
 
